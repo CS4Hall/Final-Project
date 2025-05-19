@@ -6,43 +6,32 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       /*Styling Only Related To THIS Page 
-      ~~~~~ Taken From:
-     https://www.w3schools.com/howto/howto_js_image_grid.asp*/
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        font-family: Arial;
-      }
-
-      .header {
-        text-align: center;
-        padding: 32px;
-      }
-
-      /* Create two equal columns that floats next to each other */
-      .column {
-        float: left;
-        width: 50%;
+      */
+      .parent-flex {
+        display: flex;
+        background-color: purple;
+        justify-content: space-around;
         padding: 10px;
+        margin-bottom: 20px;
+      }
+      img {
+        max-width: 30%;
+        border-radius: 10px;
       }
 
-      .column img {
-        margin-top: 12px;
-      }
-
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
+      .child-flex {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: blue;
+        justify-content: center;
+        margin: 20px;
       }
     </style>
   </head>
   <body>
-    <!-- Nav Bar -->
+    <!-- ⬆⬆⬆⬆ Nav Bar -->
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="aboutme.html">About Me</a></li>
@@ -63,128 +52,31 @@
         /></a>
       </li>
     </ul>
+    <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
     <h1>My Art</h1>
-    <div class="row">
-      <div class="column">
+    <div class="parent-flex">
+      <div class="child-flex">
         <img
           src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-          style="width: 100%"
         />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-          style="width: 100%"
-        />
+        <p>Web Dev Logo - Login</p>
       </div>
-      <div class="column">
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-          style="width: 100%"
-        />
+
+      <div class="child-flex">
         <img
           src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-          style="width: 100%"
         />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-          style="width: 100%"
-        />
+        <p>Web Dev Logo - Login</p>
       </div>
-      <div class="column">
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-          style="width: 100%"
-        />
-      </div>
-      <div class="column">
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-          style="width: 100%"
-        />
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-          style="width: 100%"
-        />
-      </div>
+    </div>
+
+    <div class="parent-flex">
+      <img
+        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
+      />
+      <img
+        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
+      />
     </div>
   </body>
 </html>
