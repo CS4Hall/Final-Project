@@ -1,3 +1,9 @@
+/* Styling Only Related To ALL Pages */
+
+body {
+  padding-top: 30px;
+  margin-left: 0px;
+}
 /* ⬆⬆⬆⬆ Nav Bar Styling 
 ~~~~~ Taken From: 
 https://www.w3schools.com/css/css_navbar_horizontal.asp */
@@ -6,10 +12,11 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #333333;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
 }
 
 li {
@@ -32,8 +39,6 @@ li a:hover:not(.active) {
   background-color: red;
 }
 
-h1{
-/*   position: relative; */
-  margin-top: 60px;
+h1 {
   width: 100%;
 }
